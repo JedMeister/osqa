@@ -5,6 +5,7 @@ dl() {
     cd $2; curl -L -f -O $PROXY $1; cd -
 }
 
-VERSION="fantasy-island-0.9.0-beta3.tar.gz"
-dl http://www.osqa.net/releases/${VERSION} /usr/local/src
+#VERSION="fantasy-island-0.9.0-beta3.tar.gz"
+#dl http://www.osqa.net/releases/${VERSION} /usr/local/src
 
+git clone --depth 1 https://github.com/dzone/osqa.git /usr/local/src/osqa
