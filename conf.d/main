@@ -10,9 +10,9 @@ SRC=/usr/local/src
 WEBROOT=/var/www/osqa
 
 # unpack and configure permissions
-tar -zxf $SRC/fantasy-island-*.tar.gz -C $(dirname $WEBROOT)
-rm $SRC/fantasy-island-*.tar.gz
-mv $(dirname $WEBROOT)/fantasy-island-* $WEBROOT
+#tar -zxf $SRC/fantasy-island-*.tar.gz -C $(dirname $WEBROOT)
+#rm $SRC/fantasy-island-*.tar.gz
+mv $SRC/osqa $WEBROOT
 chown -R root:www-data $WEBROOT
 chown -R www-data:www-data $WEBROOT/log
 chown -R www-data:www-data $WEBROOT/forum/upfiles
